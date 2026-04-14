@@ -1,5 +1,6 @@
 #if UNITY_EDITOR
 using UnityEditor;
+using UnityEditor.VersionControl;
 using UnityEngine;
 using static System.IO.Path;
 using static System.IO.Directory;
@@ -14,6 +15,12 @@ namespace Platformer
         {
             Folders.CreateDefault("Assets", "Scripts", "Models", "Arts", "Materials", "Animations", "Settings", "ScriptableObjects");
             Refresh();
+        }
+
+        [MenuItem("Tools/Setup/Import My Favorite Assets")]
+        public static void ImportMyFavoriteAssets()
+        {
+            Assets.ImportAsset("DOTween HOTween v2.unitypackage", "Demigiant/Editor ExtensionsAnimation");
         }
         
         private static class Folders
@@ -30,6 +37,15 @@ namespace Platformer
                     }
                 }
             }
+        }
+
+        private static class Assets
+        {
+            public static void ImportAsset(string asset, string subfolder,
+                string folder = "C:/Users/Admin/AppData/Roaming/Unity/Asset Store-5.x")
+            {
+                AssetDatabase.ImportPackage(Combine(folder, subfolder, asset), false);
+            } 
         }
     }
 }
