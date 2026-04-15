@@ -860,7 +860,7 @@ GameObject:
   - component: {fileID: 7720645751395644976}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -930,8 +930,10 @@ MonoBehaviour:
   jumpForce: 10
   jumpDuration: 0.5
   jumpCooldown: 0
-  jumpMaxHeight: 2
   gravityMultiplier: 3
+  dashForce: 3
+  dashDuration: 1
+  dashCooldown: 2
 --- !u!114 &4036446815475122255
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -947,7 +949,7 @@ MonoBehaviour:
   groundDistance: 0.08
   groundLayers:
     serializedVersion: 2
-    m_Bits: 1
+    m_Bits: 64
 --- !u!136 &5954040208171869072
 CapsuleCollider:
   m_ObjectHideFlags: 0

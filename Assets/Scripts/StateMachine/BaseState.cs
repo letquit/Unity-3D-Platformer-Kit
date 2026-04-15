@@ -36,7 +36,7 @@ namespace Platformer
 
         public virtual void OnExit()
         {
-            Debug.Log("BaseState.OnExit");
+            // noop
         }
     }
 }
