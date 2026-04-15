@@ -96888,6 +96888,22 @@ PrefabInstance:
       value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 5765637920947745520, guid: d1a541bd67145f24fbc8fbccaf7a72c2, type: 3}
+      propertyPath: dashForce
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765637920947745520, guid: d1a541bd67145f24fbc8fbccaf7a72c2, type: 3}
+      propertyPath: moveSpeed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765637920947745520, guid: d1a541bd67145f24fbc8fbccaf7a72c2, type: 3}
+      propertyPath: dashCooldown
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765637920947745520, guid: d1a541bd67145f24fbc8fbccaf7a72c2, type: 3}
+      propertyPath: dashDuration
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5765637920947745520, guid: d1a541bd67145f24fbc8fbccaf7a72c2, type: 3}
       propertyPath: freeLookVCam
       value: 
       objectReference: {fileID: 1140342751}

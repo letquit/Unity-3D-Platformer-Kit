@@ -5,13 +5,13 @@ namespace Platformer
 {
     public class PlatformCollisionHandler : MonoBehaviour
     {
-        private Transform platform; // The platform, if any, we are on top of
+        private Transform platform; // 我们正在其上方的平台（如果有的话）
 
         private void OnCollisionEnter(Collision other)
         {
             if (other.gameObject.CompareTag("MovingPlatform"))
             {
-                // If the contact normal is pointing up, we've collided with the top of the platform
+                // 如果接触法线指向上方，说明我们撞到了平台的顶部
                 ContactPoint contact = other.GetContact(0);
                 if (contact.normal.y < 0.5f) return;
 
