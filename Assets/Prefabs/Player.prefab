@@ -858,6 +858,7 @@ GameObject:
   - component: {fileID: 5954040208171869072}
   - component: {fileID: 1752804636401514874}
   - component: {fileID: 7720645751395644976}
+  - component: {fileID: 774448500824658960}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1012,6 +1013,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 61e1f96297784b19a4038de8d0befc38, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platformer.PlatformCollisionHandler
+--- !u!114 &774448500824658960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2842126041699194994}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d4388d263f4c28a55d15e0176aee36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Platformer.Health
+  maxHealth: 100
+  playerHealthChannel: {fileID: 11400000, guid: 40219df631e4c574187508013623e883, type: 2}
 --- !u!1 &2864494973510814154
 GameObject:
   m_ObjectHideFlags: 0

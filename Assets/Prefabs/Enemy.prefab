@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: -6390483718635909906}
   - component: {fileID: 1501868961721350133}
   - component: {fileID: 2889794039341813110}
+  - component: {fileID: 5259802577408119160}
   m_Layer: 0
   m_Name: Enemy
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -95,6 +96,7 @@ MonoBehaviour:
   playerDetector: {fileID: 2889794039341813110}
   animator: {fileID: 7285740945212914681}
   wanderRadius: 10
+  timeBetweenAttacks: 1
 --- !u!114 &2889794039341813110
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -108,9 +110,24 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Platformer.PlayerDetector
   detectionAngle: 60
-  detectionRadius: 10
-  innerDetectionRadius: 5
+  detectionRadius: 8
+  innerDetectionRadius: 2
   detectionCooldown: 1
+  attackRange: 2
+--- !u!114 &5259802577408119160
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3499259554893390038}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 13d4388d263f4c28a55d15e0176aee36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Platformer.Health
+  maxHealth: 100
+  playerHealthChannel: {fileID: 0}
 --- !u!1001 &8242914243939794803
 PrefabInstance:
   m_ObjectHideFlags: 0
